@@ -73,7 +73,7 @@ const SectionProduit: React.FC = () => {
           <div className="container mx-auto px-4 text-center">
 
             <h2 className="text-4xl font-bold mb-4 text-red-600">Découvrez notre catalogue d’infrastructure</h2>
-            <p className="text-3xl font-semibold mb-12 text-blue-600">Réalisé à partir de nos briques</p>
+            <p className="text-3xl font-semibold mb-12 text-blue-600">Réaliser à partir de nos briques</p>
             
             <div className="flex justify-center flex-wrap gap-8">
               
@@ -81,7 +81,7 @@ const SectionProduit: React.FC = () => {
                 <div className="bg-black text-white border-primary border-[2px] rounded-xl p-4 w-64 text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
                   <img src="/tinyhouse.png" alt="Tiny House" className="w-full h-48 object-cover mb-4 rounded"/>
                   <h3 className="text-xl font-semibold mb-3">Tiny House</h3>
-                  <p className="text-gray-300 mb-4 text-[15px] line-clamp-3">"Construisez des maisons durables et abordables avec nos briques, idéales pour une liberté, un espace de vie écologique et confortable."</p>
+                  <p className="text-gray-300 mb-4 text-[15px] line-clamp-3">"Construisez des maisons durables et abordables avec nos briques, idéales pour un espace de vie écologique et confortable."</p>
                   <Link href="/products/TinyHouse">
                     <button className="bg-primary text-white py-2 px-6 rounded hover:bg-blue-600 transition duration-300">
                       Découvrir
