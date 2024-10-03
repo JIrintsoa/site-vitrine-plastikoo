@@ -13,7 +13,7 @@ const team: TeamMember[] = [
   {
     name: "NOMBANISTSOA Sarobidy",
     role: "PROJECT MANAGER",
-    image: "/TSITOO.png", 
+    image: "/images/TSITOO.png", 
     bgColor: "bg-green-500",
   },
 
@@ -21,47 +21,47 @@ const team: TeamMember[] = [
   {
     name: "Razafindraibe Vanessa",
     role: "DESIGN UI & UX",
-    image: "/VANESSA.png", 
+    image: "/images/VANESSA.png", 
     bgColor: "bg-orange-500",
   },
 
   {
     name: "NIRINAHARIMANANA Sarobidy",
     role: "RESPONSABLE FINANCIER",
-    image: "/SAROBIDY.png", 
+    image: "/images/SAROBIDY.png", 
     bgColor: "bg-orange-500",
   },
   {
     name: "SARRON Sandra",
     role: "MANAGEMENT - COMMUNICATION",
-    image: "/SARRON.png", 
+    image: "/images/SARRON.png", 
     bgColor: "bg-red-500",
   },
 
   {
     name: "Randrianarinaivo I. Asandratra",
     role: "RECHERCHE & DÉVELOPPEMENT",
-    image: "/ASAH.png", 
+    image: "/images/ASAH.png", 
     bgColor: "bg-blue-500",
   },
   
   {
     name: "Randrianarisoa Yvon",
     role: "GÉNIE MÉCANIQUE",
-    image: "/YVON.png", 
+    image: "/images/YVON.png", 
     bgColor: "bg-blue-500",
   },
   
   {
     name: "RANDRIANARISON Johns",
     role: "DÉVELOPPEUR",
-    image: "/JOHNS.png", 
+    image: "/images/JOHNS.png", 
     bgColor: "bg-green-500",
   },
   {
     name: "RAKOTOARISON Tsaraefadahy Landry Brigea",
     role: "DÉVELOPPEUR",
-    image: "/LANDRY.png", 
+    image: "/images/LANDRY.png", 
     bgColor: "bg-red-500",
   },
 ];

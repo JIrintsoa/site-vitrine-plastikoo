@@ -45,7 +45,7 @@ const LIkeNumber = (props: Props) => {
   return (
     <div className="flex justify-center gap-7 mt-24 mb-36 relative">
       <Image
-        src="/logotransparent.png"
+        src="/images/logotransparent.png"
         alt="logotransparent"
         width="300"
         height="300"

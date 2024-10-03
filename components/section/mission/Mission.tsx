@@ -8,14 +8,14 @@ function Mission({}: Props) {
   return (
     <div className="bg-linear items-center justify-center text-center overflow-hidden h-1/2 p-24 sm:p-12 md:p-16">
       <Image
-        src="/logoVert.png"
+        src="/images/logoVert.png"
         alt="background"
         width="300"
         height="300"
         className="absolute mt-[-60px] left-[-120px] sm:mt-[-40px] sm:left-[-80px] md:mt-[-50px] md:left-[-100px]"
       />
       <Image
-        src="/logobleu.png"
+        src="/images/logobleu.png"
         alt="background"
         width="300"
         height="300"

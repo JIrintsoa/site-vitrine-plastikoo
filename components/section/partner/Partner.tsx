@@ -7,31 +7,35 @@ type Props = {};
 const ListImage = [
 
   {
-    imgUrl: "/ODC.png",
+    imgUrl: "/images/ODC.png",
   },
 
   {
-    imgUrl: "/orangeMoney.png",
+    imgUrl: "/images/orangeMoney.png",
   },
 
   {
-    imgUrl: "/Nokia.png",
+    imgUrl: "/images/Nokia.png",
   },
 
   {
-    imgUrl: "/amazon.png",
+    imgUrl: "/images/amazon.png",
   },
 
   {
-    imgUrl: "/ey.png",
+    imgUrl: "/images/ey.png",
   },
 
   {
-    imgUrl: "/Andao.jpeg",
+    // imgUrl: "/images/Andao.jpeg",
+    imgUrl: "/images/Andao.jpg",
+
   },
 
   {
-    imgUrl: "/Ravinala.jpeg",
+    // imgUrl: "/images/Ravinala.jpeg",
+    imgUrl: "/images/Ravinala.jpg",
+
   },
   
 ];

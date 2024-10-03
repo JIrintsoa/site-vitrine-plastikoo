@@ -8,7 +8,7 @@ const Contact = (props: Props) => {
     <div className="flex w-full h-screen bg-secondary">
       <div className="w-1/2 relative">
         <Image
-          src="/slide1.png"
+          src="/images/slide1.png"
           alt="Contact image"
           layout="fill"
           objectFit="cover"

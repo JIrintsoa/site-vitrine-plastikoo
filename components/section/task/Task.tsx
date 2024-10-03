@@ -51,14 +51,14 @@ const Task = () => (
 
     <div className="flex justify-center items-center space-x-6 mb-10">
   <Step
-    imageSrc="/dechet.png"
+    imageSrc="/images/dechet.png"
     imageAlt="dechetIllustration"
     description="Les dechets plastiques"
     className="flex flex-col items-center" // Ajoute Flexbox
   />
   <Arrow />
   <Step
-  imageSrc="/Machine.png"
+  imageSrc="/images/Machine.png"
   imageAlt="Recyclage"
   description="sont recoltés à partir de notre machine"
   className="flex flex-col items-center -mt-9" // Ajoute une marge négative
@@ -66,14 +66,14 @@ const Task = () => (
 <Arrow />
 
   <Step
-    imageSrc="/brique.png"
+    imageSrc="/images/brique.png"
     imageAlt="Recyclage"
     description="Puis recyclés et transformés en briques"
     className="flex flex-col items-center" // Ajoute Flexbox
   />
   <Arrow />
   <Step
-    imageSrc="/house.png"
+    imageSrc="/images/house.png"
     imageAlt="Recyclage"
     description="Pour construire des infrastructures"
     className="flex flex-col items-center" // Ajoute Flexbox
