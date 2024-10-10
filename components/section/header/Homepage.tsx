@@ -14,7 +14,6 @@ function Homepage({}: Props) {
     <div className="relative items-center justify-center h-[65vh] w-full overflow-hidden">
       <Slideshow />
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-black bg-opacity-50 pt-14 rounded-xl">
-        {/* Desktop and large screens */}
         <div className="hidden lg:flex flex-col items-center">
           <h1 className="text-[40px] w-[70%] font-extrabold">
             <Reveal>Ensemble,</Reveal>
