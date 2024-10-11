@@ -21,10 +21,10 @@ const config: Config = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        primary:"#00D45F",
-        secondary:"#5995FF",
-        orange:"#F45D3C",
-        dark:"#3A3A3A",
+        primary: "#00D45F",
+        secondary: "#5995FF",
+        orange: "#F45D3C",
+        dark: "#3A3A3A",
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
@@ -47,8 +47,8 @@ const config: Config = {
         },
       },
       backgroundImage: {
-        'linear': 'linear-gradient(to right, #5995FF, #00D45F)',
-        'linear2': 'linear-gradient(to right, #00D45F,#5995FF)',
+        linear: "linear-gradient(to right, #5995FF 0%, #00D45F 70%)",
+        linear2: "linear-gradient(to right, #00D45F,#5995FF)",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -72,5 +72,5 @@ const config: Config = {
     },
   },
   plugins: [],
-} satisfies Config
+} satisfies Config;
 export default config;

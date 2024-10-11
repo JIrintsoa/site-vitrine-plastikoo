@@ -6,36 +6,22 @@ type Props = {};
 
 function Mission({}: Props) {
   return (
-    <div className="bg-linear items-center justify-center text-center overflow-hidden h-1/2 p-24 sm:p-12 md:p-16">
-      <Image
-        src="/logoVert.png"
-        alt="background"
-        width="350"
-        height="350"
-        className="absolute mt-[-60px] left-[-120px] sm:mt-[-40px] sm:left-[-80px] md:mt-[-50px] md:left-[-100px]"
-      />
-      <Image
-        src="/logobleu.png"
-        alt="background"
-        width="350"
-        height="350"
-        className="absolute mt-[-60px] right-[-120px] sm:mt-[-40px] sm:right-[-80px] md:mt-[-50px] md:right-[-100px]"
-      />
+    <div className="bg-linear flex flex-col items-center justify-center text-center overflow-hidden h-auto px-10 py-8 sm:p-10 md:p-16 lg:p-24">
       <Reveal>
-        <h1 className="text-4xl font-bold text-white mb-5 sm:text-3xl md:text-4xl">
+        <h1 className="text-[28px] sm:text-3xl md:text-4xl lg:text-[40px] font-bold text-white mb-5">
           Notre mission
         </h1>
       </Reveal>
       <Reveal>
-        <p className="text-white mb-6 pr-56 pl-56 text-[16px] font-semibold sm:pr-10 sm:pl-10 md:pr-24 md:pl-24">
-          Notre mission est de réduire la pollution environnementale en
-          transformant les déchets plastiques en matériaux de construction de
-          haute qualité. Nous vous offrons des produits durables et abordables,
-          conçus pour bâtir un avenir plus propre et écologiques.
+        <p className="text-white mb-6 text-[14px] px-7 sm:text-[16px] md:text-[18px] font-semibold sm:px-10 md:px-16 lg:px-24">
+          Notre mission est de réduire l'impact des déchets plastiques sur
+          l'environnement en éduquant et sensibilisant la communauté. Nous
+          collectons et transformons ces déchets en matériaux de construction
+          innovants pour construire des infrastructures écologiques.
         </p>
       </Reveal>
       <Reveal>
-        <button className="bg-white rounded-lg text-primary px-20 py-2 hover:scale-x-105 hover:scale-y-105 transition duration-300 sm:px-16 md:px-18">
+        <button className="bg-white rounded-lg text-primary px-12 sm:px-16 md:px-18 lg:px-20 py-2 hover:scale-105 transition duration-300">
           Découvrir
         </button>
       </Reveal>

@@ -3,39 +3,51 @@ import { GiWaterRecycling } from "react-icons/gi";
 import { TbTransformFilled } from "react-icons/tb";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { ReactNode } from "react";
-
+import { FaPeopleRoof } from "react-icons/fa6";
 export interface ProcessItem {
   arrow: ReactNode;
   icon: ReactNode;
   titre: string;
   description: string;
   bgColor: string;
+  text_color: string;
 }
-
 
 export const process: ProcessItem[] = [
   {
     arrow: <FaArrowRightLong />,
-    icon: <GiWaterRecycling />,
-    titre: "Recolte",
+    icon: <FaPeopleRoof />,
+    titre: "Sensibiliser",
     description:
-      "Plastikôo met en place une collecte des déchets plastiques auprès des particuliers, des ménages, des associations ou des entreprises. Nous encourageons activement la communauté à participer à notre initiative en nous fournissant leurs déchets plastiques, contribuant ainsi à la préservation de notre environnement tout en soutenant l'économie locale.",
-    bgColor: "bg-orange",
+      "Plastikôo s'engage à sensibiliser et éduquer la population sur l'importance de protéger l’environnement et les gestes de recyclages. Grâce à notre plateforme digitale, chacun peut apprendre des gestes éco-responsables, accéder à des contenus éducatifs, et suivre ses progrès pour un avenir plus propre.",
+    bgColor: "bg-dark",
+    text_color: "text-white",
   },
   {
     arrow: <FaArrowRightLong />,
     icon: <FaRecycle />,
-    titre: "Recyclage",
+    titre: "Collecter",
     description:
-      "Après les matières recyclés, Plastikôo donne une seconde vie aux déchets plastiques en les convertissant en matériaux de construction écologiques, tels que des briques, des tables et des chaises etc. Cette initiative ne se contente pas de réduire la pollution plastique, mais elle offre également des solutions durables et abordables pour les projets de construction à Madagascar.",
+      "Plastikôo collecte les déchets plastiques via des machines automatisées fixes et mobiles, installées dans des zones d’affluence et utilisées dans les quartiers. Ces machines offriront des récompenses aux utilisateurs pour chaque dépôt de plastique, encourageant ainsi un comportement plus responsable",
+    bgColor: "bg-secondary",
+    text_color: "text-white",
+  },
+  {
+    arrow: <FaArrowRightLong />,
+    icon: <FaRecycle />,
+    titre: "Transformer",
     bgColor: "bg-primary",
+    text_color: "text-white",
+    description:
+      "Plastikôo transforme ces déchets plastiques en matériaux de construction utiles. Une fois collectés, ces déchets sont triés et nettoyés pour éliminerTransformerles impuretés. Ils sont ensuite fondus, moulés en briques et autres matériaux de construction écologiques, prêts à être utilisés.",
   },
   {
     arrow: <FaArrowRightLong />,
     icon: <TbTransformFilled />,
-    titre: "Transformation",
-    bgColor: "bg-secondary",
+    titre: "Construire ",
+    text_color: "text-white",
+    bgColor: "bg-orange",
     description:
-      "Une fois ces déchets plastiques collectés, ils sont soigneusement triés et nettoyés pour éliminer les impuretés. Ce processus de tri et de nettoyage est essentiel pour assurer la qualité des matériaux recyclés et passent ensuite par des procédés de recyclage avancés, transformant les déchets en matières premières prêtes à être réutilisées.",
+      "Les briques en plastique recyclé sont utilisées pour construire des infrastructures modernes, solides et éco-responsables. Elles offrent un design attractif, sont personnalisables, faciles à assembler, et adaptées à divers projets comme des Tiny houses, library et classroom.",
   },
 ];

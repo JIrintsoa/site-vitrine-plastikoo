@@ -1,4 +1,3 @@
-// import Image from "next/image";
 import React from "react";
 import { Image } from "antd";
 import { Reveal } from "../../utils/Reveal";
@@ -16,8 +15,6 @@ const team: TeamMember[] = [
     image: "/TSITOO.png", 
     bgColor: "bg-green-500",
   },
-
-
   {
     name: "Razafindraibe Vanessa",
     role: "DESIGN UI & UX",
@@ -90,7 +87,7 @@ const Team = () => {
             >
               <Image
                 src={member.image}
-                width="100"
+                width="200"
                 height="100"
                 alt={member.name}
                 className="w-full h-full object-cover"
