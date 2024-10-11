@@ -18,7 +18,7 @@ function Binding({}: Props) {
     {
       id: 2,
       title: "02",
-      content: "Création d’emplois",
+      content: "Création d'emplois",
       description:
         "Nous favorisons la création d'emplois locaux en mettant en place des opportunités rémunératrices pour les personnes qui contribuent à la collecte et au triage des déchets plastiques via notre machine.",
     },
@@ -32,7 +32,7 @@ function Binding({}: Props) {
     {
       id: 4,
       title: "04",
-      content: "Promouvoir l’économie circulaire",
+      content: "Promouvoir l'économie circulaire",
       description:
         "En réutilisant les déchets plastiques comme ressource, nous éliminons les déchets et réduisons la dépendance aux matières premières en créant des produits durables et innovants.",
     },
@@ -46,7 +46,7 @@ function Binding({}: Props) {
     {
       id: 6,
       title: "06",
-      content: "Reduction de l’empreinte carbone",
+      content: "Reduction de l'empreinte carbone",
       description:
         "En réduisant les émissions de gaz à effet de serre liées à la production de plastiques neufs, nous contribuons à la lutte contre le changement climatique.",
     },
@@ -99,7 +99,9 @@ function Binding({}: Props) {
             >
               <h2 className="text-4xl font-bold mb-2">{item.title}</h2>
               <p className="text-[15px] font-bold">{item.content}</p>
-              <p className="text-[12px] line-clamp-5  mt-2">{item.description}</p>
+              <p className="text-[12px] line-clamp-5  mt-2">
+                {item.description}
+              </p>
             </div>
           </Reveal>
         ))}

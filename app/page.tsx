@@ -12,22 +12,23 @@ import Team from "@/components/section/teams/Team";
 import Contact from "./contact/page";
 import Partner from "@/components/section/partner/Partner";
 import { Header } from "antd/es/layout/layout";
+import Footer from "@/components/section/footer/Footer";
 
 export default function Home() {
   return (
-   
     <div className="min-h-screen flex flex-col">
       <Homepage />
       <Task />
       <Mission />
       <Binding />
-      <Solutions />
+      {/* <Solutions /> */}
       <Solution />
       <LIkeNumber />
       <AutreProduit />
       <Team />
       <Partner />
       <Contact />
+      <Footer />
     </div>
   );
 }

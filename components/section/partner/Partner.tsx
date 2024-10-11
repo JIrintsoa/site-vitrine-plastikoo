@@ -15,18 +15,37 @@ const ListImage = [
     imgUrl: "/ey.png",
   },
   {
-    imgUrl: "/orangeMoney.png",
+    imgUrl: "/Nokia.png",
   },
   {
-    imgUrl: "/Nokia.png",
+    imgUrl: "/ANDAO.png",
+  },
+  {
+    imgUrl: "/STUDIO.png",
+  },
+  {
+    imgUrl: "/RAVINALA.png",
   },
 ];
 
 const Partner = ({}: Props) => {
   return (
-    <div className="p-8 mb-32">
-      <div className="bg-primary h-2 w-[10%] mb-20 mx-auto"></div>
-      <h2 className="text-center text-3xl font-bold text-secondary mb-14">
+    <div className=" mb-32">
+      <div className="bg-primary h-2 w-[10%] mb-20 mx-auto" />
+      <div className="bg-secondary w-full mb-20">
+        <h1 className="ml-[15%] text-[40px] pt-11 text-white font-black">
+          Nos contributions ODD
+        </h1>
+        <div className="bg-secondary w-full flex flex-col items-center justify-center text-center overflow-hidde px-10 sm:p-10 md:p-16 lg:p-24">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 w-[80%] gap-y-3 gap-x-9">
+            <Image src="/F-WEB1.png" alt="" width="500" height="500" />
+            <Image src="/F-WEB2.png" alt="" width="500" height="500" />
+            <Image src="/F-WEB3.png" alt="" width="500" height="500" />
+          </div>
+        </div>
+      </div>
+
+      <h2 className="text-center text-3xl font-bold text-secondary ">
         Nos Partenaires
       </h2>
       <Marquee
