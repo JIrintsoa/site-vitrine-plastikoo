@@ -50,8 +50,12 @@ const Valeurs: React.FC<Props> = () => {
         {valeurs.map((valeur, index) => (
           <RevealLeft key={index}>
             <div className="flex flex-col w-9 items-center">
-              <div className="text-green-600 text-[90px] mb-4">{valeur.icon}</div>
-              <h3 className=" font-bold text-[20px] text-dark">{valeur.title}</h3>
+              <div className="text-green-600 text-[90px] mb-4">
+                {valeur.icon}
+              </div>
+              <h3 className=" font-bold text-[20px] text-dark">
+                {valeur.title}
+              </h3>
             </div>
           </RevealLeft>
         ))}
