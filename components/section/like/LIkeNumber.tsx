@@ -36,10 +36,14 @@ const card: CardType[] = [
 ];
 
 const LIkeNumber = (props: Props) => {
-  const [inViewStates, setInViewStates] = useState<boolean[]>(new Array(card.length).fill(false));
+  const [inViewStates, setInViewStates] = useState<boolean[]>(
+    new Array(card.length).fill(false)
+  );
 
   const handleInViewChange = useCallback((inView: boolean, index: number) => {
-    setInViewStates((prev) => prev.map((state, i) => (i === index ? inView : state)));
+    setInViewStates((prev) =>
+      prev.map((state, i) => (i === index ? inView : state))
+    );
   }, []);
 
   return (
@@ -53,17 +57,17 @@ const LIkeNumber = (props: Props) => {
           >
             {inViewStates[key] && (
               <Reveal>
-                <div className="bg-primary hover:translate-y-3 transition duration-300 w-48 h-48 flex flex-col items-center justify-center z-30 text-white  p-4 rounded-3xl">
-                  <h1 className="font-extrabold text-[30px] ">
-                    <CountUp
-                      start={0}
-                      end={cardlist.number}
-                      duration={4}
-                      // suffix={cardlist.suffix}
-                    />
+                <div className=" lg:bg-primary hover:translate-y-3 transition duration-300 lg:w-48 lg:h-48 flex flex-col items-center justify-center z-30 text-white p-1 lg:p-4 rounded-3xl">
+                  <div className="lg:block flex space-x-3 items-center">
+                    <p className="lg:hidden font-extrabold">+</p>
+                    <h1 className="font-extrabold text-[20px] lg:text-[30px] ">
+                      <CountUp start={0} end={cardlist.number} duration={4} />
+                    </h1>
+                  </div>
+                  <h1 className="text-[20px] lg:text-[30px] ">
+                    {cardlist.suffix}
                   </h1>
-                  <h1 className="text-[30px]">{cardlist.suffix}</h1>
-                  <p className="font-semibold text-center">
+                  <p className="font-semibold lg:block hidden text-center">
                     {cardlist.description}
                   </p>
                 </div>
@@ -82,7 +86,11 @@ type InViewMonitorProps = {
   children: React.ReactNode;
 };
 
-const InViewMonitor: React.FC<InViewMonitorProps> = ({ index, onInViewChange, children }) => {
+const InViewMonitor: React.FC<InViewMonitorProps> = ({
+  index,
+  onInViewChange,
+  children,
+}) => {
   const { ref, inView } = useInView({
     threshold: 0.5,
     triggerOnce: false,

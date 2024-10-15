@@ -13,7 +13,7 @@ function Mission({}: Props) {
         </h1>
       </Reveal>
       <Reveal>
-        <p className="text-white mb-6 text-[14px] px-4 sm:text-[16px] md:text-[18px] font-semibold sm:px-10 md:px-5  lg:px-4">
+        <p className="text-white mb-6 text-[15px] px-4 sm:text-[16px] md:text-[18px] font-semibold sm:px-10 md:px-5  lg:px-4">
           Notre mission est de réduire l'impact des déchets plastiques sur
           l'environnement en éduquant et sensibilisant la communauté. Nous
           collectons et transformons ces déchets en matériaux de construction

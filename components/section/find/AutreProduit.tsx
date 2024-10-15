@@ -9,7 +9,7 @@ const SectionProduit: React.FC = () => {
       <Reveal>
         <div className="bg-white py-16">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-4xl font-bold mb-4 text-red">
+            <h2 className=" text-[30px] lg:text-4xl font-bold mb-4 text-red">
               Découvrez nos Tiny constructions
             </h2>
             <p className="text-3xl font-semibold mb-12 text-secondary">

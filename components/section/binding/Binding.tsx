@@ -57,22 +57,25 @@ function Binding({}: Props) {
   };
 
   return (
-    <div className="p-20 bg-gray-100">
+    <div className="lg:p-20 px-6 bg-gray-100">
       <Reveal>
-        <h1 className="text-center text-3xl font-bold mb-8" id="binding">
+        <h1
+          className="text-center text-3xl font-bold mb-8 lg:mt-0 mt-10"
+          id="binding"
+        >
           Nos engagements
         </h1>
       </Reveal>
-      <div className="grid grid-cols-1 w-[64%] h-[64%] ml-[20%] mt-auto md:grid-cols-2 lg:grid-cols-3 gap-1">
+      <div className="grid grid-cols-2 w-[100%]  lg:w-[64%] lg:h-[64%] lg:ml-[20%] mt-auto md:grid-cols-2 lg:grid-cols-3 gap-4">
         {items.map((item) => (
           <Reveal key={item.id}>
             <div
               onClick={() => handleCardClick(item.id)}
-              className={`p-5 flex flex-col justify-start items-start cursor-pointer transition-all duration-300 ${
+              className={`p-7 w-[180px] h-[180px] lg:w-[250px] lg:h-[230px] lg:flex lg:flex-col lg:justify-start lg:items-start cursor-pointer transition-all duration-300 ${
                 selectedId === item.id
-                  ? `bg-green-500 text-white rounded-xl transform ${
+                  ? `bg-green-500 text-white  rounded-xl transform ${
                       item.id === 1
-                        ? "translate-x-[15px] translate-y-[-15px] sm:translate-x-[5px] sm:translate-y-[5px] md:translate-x-[-10px] lg:translate-x-[-15px] lg:translate-y-[-15px]  md:translate-y-[-15px]"
+                        ? "translate-x-0 translate-y-[-15px] sm:translate-x-[5px] sm:translate-y-[5px] md:translate-x-[-10px] lg:translate-x-[-15px] lg:translate-y-[-15px]  md:translate-y-[-15px]"
                         : item.id === 2
                         ? "translate-x-0 sm:translate-y-[-5px] md:translate-y-[-10px] lg:translate-y-[-15px]"
                         : item.id === 3
@@ -81,27 +84,31 @@ function Binding({}: Props) {
                         ? "translate-x-[0px] sm:translate-x-[-5px] md:translate-x-[-10px] lg:translate-x-[-15px] lg:translate-y-[15px]"
                         : item.id === 5
                         ? "translate-x-0 sm:translate-y-[5px] md:translate-y-[10px] lg:translate-y-[15px]"
-                        : "translate-x-[15px] sm:translate-x-[10px] md:translate-x-[5px] lg:translate-x-[15px] lg:translate-y-[15px]"
+                        : "translate-x-[0px] sm:translate-x-[10px] md:translate-x-[5px] lg:translate-x-[15px] lg:translate-y-[15px]"
                     }`
                   : "bg-blue-500 text-white"
               } ${
                 item.id === 1
                   ? "rounded-tl-xl"
                   : item.id === 3
-                  ? "rounded-tr-xl"
+                  ? "lg:rounded-tr-xl"
                   : item.id === 4
-                  ? "rounded-bl-xl"
+                  ? "lg:rounded-bl-xl"
+                  : item.id === 2
+                  ? "lg:rounded-bl-xl rounded-tr-xl"
+                  : item.id === 5
+                  ? "lg:rounded-bl-xl rounded-bl-xl"
                   : item.id === 6
                   ? "rounded-br-xl"
                   : ""
               }`}
-              style={{ height: "230px", width: "250px" }}
+              // style={{ height: "230px", width: "250px" }}
             >
               <h2
                 className={`transition-all duration-300 ease-in-out ${
                   selectedId === item.id
-                    ? "text-5xl font-extrabold"
-                    : "text-4xl font-bold mb-2"
+                    ? "text-4xl font-extrabold"
+                    : "text-5xl font-bold mb-2"
                 }`}
               >
                 {item.title}
@@ -109,15 +116,15 @@ function Binding({}: Props) {
               <p
                 className={`transition-all duration-300 ease-in-out ${
                   selectedId === item.id
-                    ? "text-[15px] font-extrabold justify-center mb-4"
-                    : "text-xl font-bold mb-2"
+                    ? "text-xl font-extrabold justify-center mb-4"
+                    : " text-[15px] font-bold mb-2"
                 }`}
               >
                 {item.content}
               </p>
 
               {selectedId === item.id && (
-                <p className="text-[12px] line-clamp-5  mt-2">
+                <p className="text-[12px] lg:block hidden line-clamp-5  mt-2">
                   {item.description}
                 </p>
               )}

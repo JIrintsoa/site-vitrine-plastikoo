@@ -70,10 +70,10 @@ const Team = () => {
           </h1>
         </Reveal>
         {/* <Reveal> */}
-          <h1 className="text-white mb-6 text-[28px] px-7 sm:text-[16px] md:text-[18px] font-semibold sm:px-10 md:px-16 lg:px-24">
-            Une planète où le plastique ne pollue plus, mais bâtit des
-            possibilités infinies.
-          </h1>
+        <h1 className="text-white mb-6 text-[28px] px-7 sm:text-[16px] md:text-[18px] font-semibold sm:px-10 md:px-16 lg:px-24">
+          Une planète où le plastique ne pollue plus, mais bâtit des
+          possibilités infinies.
+        </h1>
         {/* </Reveal> */}
       </div>
       <Reveal>

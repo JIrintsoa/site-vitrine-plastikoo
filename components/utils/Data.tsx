@@ -43,7 +43,7 @@ export const process: ProcessItem[] = [
   },
   {
     arrow: <FaArrowRightLong />,
-    icon: <TbTransformFilled />,
+    icon: <FaArrowRightLong />,
     titre: "Construire ",
     text_color: "text-white",
     bgColor: "bg-orange",

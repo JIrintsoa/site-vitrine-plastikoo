@@ -17,21 +17,20 @@ const divStyle = {
 // Images du diaporama
 const slideImages = [
   {
-    url: "/images/slide3.png",
+    url: "/slide3.png",
     caption: "Slide 1",
   },
   {
-    url: "/images/slide1.png",
+    url: "/slide1.png",
     caption: "Slide 2",
   },
   {
-    url: "/images/slide2.png",
+    url: "/slide2.png",
     caption: "Slide 3",
   },
 ];
 
 const Slideshow = () => {
-  // Propriétés pour personnaliser les flèches de navigation
   const properties = {
     prevArrow: (
       <button className="w-10 h-10 hidden bg-white text-black rounded-full absolute left-5 transform -translate-y-1/2 top-1/2 z-10 hover:bg-gray-300 transition duration-300 ease-in-out">

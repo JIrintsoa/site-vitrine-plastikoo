@@ -18,46 +18,51 @@ export interface ProcessItem {
 }
 
 const ProcessCard = ({ item }: { item: ProcessItem }) => (
-  <Reveal>
+  // <Reveal>
     <div
-      className={`${item.bgColor} hover:translate-y-3 text-white transition duration-300 rounded-2xl shadow-lg px-8 py-4 flex flex-col`}
+      className={`${item.bgColor} lg:hover:z-50 hover:translate-y-3 text-white transition duration-300 rounded-2xl shadow-lg px-8 py-4 flex flex-col`}
     >
-      <div className={`text-6xl text-start ${item.text_color} mb-4`}>{item.icon}</div>
-      <h2 className="text-[30px] font-bold mb-2">{item.titre}</h2>
-      <p className="opacity-80 line-clamp-6 mb-4 font-semibold text-[15px] text-start">
+      <div className={`text-6xl text-start ${item.text_color} mb-4`}>
+        {item.icon}
+      </div>
+      <h2 className="lg:text-[30px] text-[20px] font-bold mb-2">
+        {item.titre}
+      </h2>
+      <p className="opacity-80 hidden lg:block space-x-5 line-clamp-6 mb-4 font-semibold text-[15px] text-start">
         {item.description}
       </p>
     </div>
-  </Reveal>
+  // </Reveal>
 );
 
 const Task = () => (
   <div className="p-14 bg-gray-100">
-    <div className="flex flex-col-reverse lg:flex-row justify-start items-center lg:items-start lg:space-x-8 w-full">
-  <div className="text-left px-4 md:px-12 lg:px-24 mb-8 w-full lg:w-1/2">
-    <h1 className="text-[28px] md:text-[36px] lg:text-[40px] font-bold text-primary mt-7">
-      Ce que nous faisons
-    </h1>
-    <Reveal>
-      <p className="mt-4 pb-6 text-[14px] md:text-[16px] text-dark font-semibold">
-        PLASTIKÔO collecte les déchets plastiques et les transforme en
-        matériaux de construction pour bâtir des infrastructures durables.
-      </p>
-    </Reveal>
-    <button className="bg-secondary flex items-center py-2 justify-start text-white px-6 md:px-8 rounded-lg hover:scale-x-105 hover:scale-y-105 transition duration-300">
-      <div className="text-[12px] md:text-[14px]">Vidéo de présentation</div>
-      <PiVideoFill className="text-white ml-2" />
-    </button>
-  </div>
-  <Image
-    src="/notre-solution.png"
-    width="400"
-    height="400"
-    className=" lg:w-[50%] mr-0 lg:mr-12"
-    alt="dechet"
-  />
-</div>
-
+    <div className="flex flex-col lg:flex-row justify-start items-center lg:items-start lg:space-x-8 w-full">
+      <div className="text-left px-4 md:px-12 lg:px-24 mb-8 w-full lg:w-1/2">
+        <h1 className="text-[28px] md:text-[36px] lg:text-[40px] font-bold text-primary mt-7">
+          Ce que nous faisons
+        </h1>
+        <Reveal>
+          <p className="mt-4 pb-6 text-[14px] md:text-[16px] text-dark font-semibold">
+            PLASTIKÔO collecte les déchets plastiques et les transforme en
+            matériaux de construction pour bâtir des infrastructures durables.
+          </p>
+        </Reveal>
+        <button className="bg-secondary flex items-center py-2 justify-start text-white px-6 md:px-8 rounded-lg hover:scale-x-105 hover:scale-y-105 transition duration-300">
+          <div className="text-[12px] md:text-[14px]">
+            Vidéo de présentation
+          </div>
+          <PiVideoFill className="text-white ml-2" />
+        </button>
+      </div>
+      <Image
+        src="/notre-solution.png"
+        width="400"
+        height="400"
+        className=" lg:w-[50%] mr-0 lg:mr-12"
+        alt="dechet"
+      />
+    </div>
 
     <div className="justify-start">
       {/* <div className="my-4"> */}
@@ -65,7 +70,7 @@ const Task = () => (
         Nos solutions
       </h1>
       {/* </div> */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 w-[80%] ml-[8%] mt-auto gap-9">
+      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 lg:w-[80%] lg:ml-[8%] mt-auto gap-4 lg:gap-9">
         {process.map((item, index) => (
           <ProcessCard key={index} item={item} />
         ))}
@@ -100,8 +105,6 @@ const Step = ({
     </p>
   </div>
 );
-
-
 
 const Arrow = () => (
   <Reveal>
