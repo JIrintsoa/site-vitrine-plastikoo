@@ -177,7 +177,7 @@ const SectionProduit: React.FC = () => {
               </RevealLeft>
             </div>
 
-            <div className="mt-12">
+            <div className="my-12">
               <Link href="/products/AutreProduit">
                 <button className="bg-white border-2 border-primary text-primary py-2 px-8 font-bold hover:bg-primary hover:text-white transition-colors">
                   Autres Produits

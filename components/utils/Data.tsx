@@ -1,8 +1,8 @@
 import { FaRecycle } from "react-icons/fa";
-import { FaTrash } from "react-icons/fa"; // Ajout de FaTrash pour l'icône poubelle
-import { MdHouse } from "react-icons/md"; // Importation de l'icône pour la construction
 import { FaArrowRightLong } from "react-icons/fa6";
+import { MdOutlineConstruction } from "react-icons/md";
 import { ReactNode } from "react";
+import { SiOpencollective } from "react-icons/si";
 import { FaPeopleRoof } from "react-icons/fa6";
 export interface ProcessItem {
   arrow: ReactNode;
@@ -25,7 +25,7 @@ export const process: ProcessItem[] = [
   },
   {
     arrow: <FaArrowRightLong />,
-    icon: <FaRecycle />,
+    icon: <SiOpencollective />,
     titre: "Collecter",
     description:
       "Plastikôo collecte les déchets plastiques via des machines automatisées fixes et mobiles, installées dans des zones d’affluence et utilisées dans les quartiers. Ces machines offriront des récompenses aux utilisateurs pour chaque dépôt de plastique, encourageant ainsi un comportement plus responsable",
@@ -43,7 +43,7 @@ export const process: ProcessItem[] = [
   },
   {
     arrow: <FaArrowRightLong />,
-    icon: <FaArrowRightLong />,
+    icon: <MdOutlineConstruction />,
     titre: "Construire ",
     text_color: "text-white",
     bgColor: "bg-orange",
