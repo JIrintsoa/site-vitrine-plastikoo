@@ -58,7 +58,7 @@ const LIkeNumber = (props: Props) => {
             {inViewStates[key] && (
               <Reveal>
                 <div className=" lg:bg-primary hover:translate-y-3 transition duration-300 lg:w-48 lg:h-48 flex flex-col items-center justify-center z-30 text-white p-1 lg:p-4 rounded-3xl">
-                  <div className="lg:block flex space-x-3 items-center">
+                  <div className="lg:block flex space-x-1 items-center">
                     <p className="lg:hidden font-extrabold">+</p>
                     <h1 className="font-extrabold text-[20px] lg:text-[30px] ">
                       <CountUp start={0} end={cardlist.number} duration={4} />

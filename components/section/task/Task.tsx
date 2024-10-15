@@ -66,7 +66,7 @@ const Task = () => (
 
     <div className="justify-start">
       {/* <div className="my-4"> */}
-      <h1 className="text-primary my-6 ml-[8%] sm:text-4xl lg:text-5xl font-bold text-[40px]">
+      <h1 className="text-primary my-6 ml-[8%] sm:text-4xl lg:text-5xl font-bold text-[28px]">
         Nos solutions
       </h1>
       {/* </div> */}
