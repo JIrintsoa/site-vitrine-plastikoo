@@ -34,7 +34,7 @@ const team: TeamMember[] = [
     bgColor: "bg-red-500",
   },
   {
-    name: "RANDRIANARISOA Yvon",
+    name: "RANDRIAMIHAJA Yvon",
     role: "GÉNIE MÉCANIQUE",
     image: "/YVON.png",
     bgColor: "bg-blue-500",

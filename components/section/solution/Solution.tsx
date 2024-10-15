@@ -25,23 +25,11 @@ const valeurs = [
     title: "Qualité et Durabilité ",
     icon: <FaTree />,
   },
-  // {
-  //   title: "Economie circulaire",
-  //   icon: <FaRecycle />,
-  // },
-  // {
-  //   title: "Qualité et Durabilité",
-  //   icon: <FaCogs />,
-  // },
-  // {
-  //   title: "Accessibilité et praticité",
-  //   icon: <FaAccessibleIcon />,
-  // },
 ];
 
 const Valeurs: React.FC<Props> = () => {
   return (
-    <div className="text-center py-10 bg-white text-black">
+    <div className=" py-10 bg-white text-black">
       {/* Titre principal */}
       <Reveal>
         <h2 className="text-4xl font-bold text-green-600 mb-8">Nos valeurs</h2>
@@ -49,7 +37,7 @@ const Valeurs: React.FC<Props> = () => {
 
       {/* Description */}
       <Reveal>
-        <p className="text-lg mb-24 font-bold text-dark  mx-24 md:px-20 lg:px-44">
+        <p className="text-lg mb-24 font-bold text-dark  mx-10 md:px-20 lg:px-44">
           Chez Plastikôo, nos valeurs sont au cœur de tout ce que nous faisons.
           Elles reflètent notre engagement envers l'environnement et la
           communauté, orientant chaque étape de notre mission pour un futur plus

@@ -16,7 +16,7 @@ import Footer from "@/components/section/footer/Footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex overflow-x-hidden flex-col">
       <Homepage />
       <Task />
       <Mission />

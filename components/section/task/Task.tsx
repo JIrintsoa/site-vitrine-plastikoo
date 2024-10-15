@@ -59,34 +59,9 @@ const Task = () => (
 </div>
 
 
-    {/* <div className="flex justify-center items-center space-x-6 space-y-4 mb-10">
-      <Step
-        imageSrc="/dechet.png"
-        imageAlt="dechetIllustration"
-        description="Les dechets plastiques"
-      />
-      <Arrow />
-      <Step
-        imageSrc="/Machine.png"
-        imageAlt="Recyclage"
-        description="sont recoltés à partir de notre machine"
-      />
-      <Arrow />
-      <Step
-        imageSrc="/brique.png"
-        imageAlt="Recyclage"
-        description="Puis recyclés et transformés en briques"
-      />
-      <Arrow />
-      <Step
-        imageSrc="/house.png"
-        imageAlt="Recyclage"
-        description="Pour construire un mur, une maison et plus encore"
-      />
-    </div> */}
     <div className="justify-start">
       {/* <div className="my-4"> */}
-      <h1 className="text-primary my-6 ml-[8%] font-bold text-[40px]">
+      <h1 className="text-primary my-6 ml-[8%] sm:text-4xl lg:text-5xl font-bold text-[40px]">
         Nos solutions
       </h1>
       {/* </div> */}

@@ -5,7 +5,7 @@ import { Reveal } from "../../utils/Reveal";
 type Props = {};
 
 function Binding({}: Props) {
-  const [selectedId, setSelectedId] = useState<number | null>(1);
+  const [selectedId, setSelectedId] = useState<number | null>(null);
 
   const items = [
     {
@@ -53,7 +53,7 @@ function Binding({}: Props) {
   ];
 
   const handleCardClick = (id: number) => {
-    setSelectedId(id);
+    setSelectedId((prevId) => (prevId === id ? null : id));
   };
 
   return (
@@ -72,16 +72,16 @@ function Binding({}: Props) {
                 selectedId === item.id
                   ? `bg-green-500 text-white rounded-xl transform ${
                       item.id === 1
-                        ? "translate-x-[-15px] translate-y-[-15px]"
+                        ? "translate-x-[15px] translate-y-[-15px] sm:translate-x-[5px] sm:translate-y-[5px] md:translate-x-[-10px] lg:translate-x-[-15px] lg:translate-y-[-15px]  md:translate-y-[-15px]"
                         : item.id === 2
-                        ? "translate-x-0 translate-y-[-15px]"
+                        ? "translate-x-0 sm:translate-y-[-5px] md:translate-y-[-10px] lg:translate-y-[-15px]"
                         : item.id === 3
-                        ? "translate-x-[15px] translate-y-[-15px]"
+                        ? "translate-x-0 sm:translate-x-[10px] md:translate-x-[5px] lg:translate-x-[15px] lg:translate-y-[-15px]"
                         : item.id === 4
-                        ? "translate-x-[-15px] translate-y-[15px]"
+                        ? "translate-x-[0px] sm:translate-x-[-5px] md:translate-x-[-10px] lg:translate-x-[-15px] lg:translate-y-[15px]"
                         : item.id === 5
-                        ? "translate-x-0 translate-y-[15px]"
-                        : "translate-x-[15px] translate-y-[15px]"
+                        ? "translate-x-0 sm:translate-y-[5px] md:translate-y-[10px] lg:translate-y-[15px]"
+                        : "translate-x-[15px] sm:translate-x-[10px] md:translate-x-[5px] lg:translate-x-[15px] lg:translate-y-[15px]"
                     }`
                   : "bg-blue-500 text-white"
               } ${
@@ -97,11 +97,30 @@ function Binding({}: Props) {
               }`}
               style={{ height: "230px", width: "250px" }}
             >
-              <h2 className="text-4xl font-bold mb-2">{item.title}</h2>
-              <p className="text-[15px] font-bold">{item.content}</p>
-              <p className="text-[12px] line-clamp-5  mt-2">
-                {item.description}
+              <h2
+                className={`transition-all duration-300 ease-in-out ${
+                  selectedId === item.id
+                    ? "text-5xl font-extrabold"
+                    : "text-4xl font-bold mb-2"
+                }`}
+              >
+                {item.title}
+              </h2>
+              <p
+                className={`transition-all duration-300 ease-in-out ${
+                  selectedId === item.id
+                    ? "text-[15px] font-extrabold justify-center mb-4"
+                    : "text-xl font-bold mb-2"
+                }`}
+              >
+                {item.content}
               </p>
+
+              {selectedId === item.id && (
+                <p className="text-[12px] line-clamp-5  mt-2">
+                  {item.description}
+                </p>
+              )}
             </div>
           </Reveal>
         ))}

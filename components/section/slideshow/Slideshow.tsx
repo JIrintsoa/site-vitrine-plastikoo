@@ -3,21 +3,18 @@ import React from "react";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 
-const spanStyle = {
-  padding: "20px",
-  background: "#efefef",
-  color: "#000000",
-};
-
+// Styles pour chaque slide
 const divStyle = {
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
   backgroundSize: "cover",
-  height: "65vh",
-  width: "100%",
+  backgroundPosition: "center",
+  height: "65vh", // Ajuste automatiquement à 65% de la hauteur de l'écran
+  width: "100%", // Pleine largeur de l'écran
 };
 
+// Images du diaporama
 const slideImages = [
   {
     url: "/slide3.png",
@@ -34,26 +31,30 @@ const slideImages = [
 ];
 
 const Slideshow = () => {
+  // Propriétés pour personnaliser les flèches de navigation
   const properties = {
     prevArrow: (
-      <button className="hidden w-12 h-12 bg-white text-primary rounded-full absolute ml-5 transform -translate-y-1/2 top-1/2  justify-center items-center z-10">
+      <button className="w-10 h-10 hidden bg-white text-black rounded-full absolute left-5 transform -translate-y-1/2 top-1/2 z-10 hover:bg-gray-300 transition duration-300 ease-in-out">
         &#10094;
       </button>
     ),
     nextArrow: (
-      <button className="w-12 h-12 hidden bg-white text-primary rounded-full absolute mr-5 transform -translate-y-1/2 top-1/2 justify-center items-center z-10">
+      <button className="w-10 h-10 bg-white hidden text-black rounded-full absolute right-5 transform -translate-y-1/2 top-1/2 z-10 hover:bg-gray-300 transition duration-300 ease-in-out">
         &#10095;
       </button>
     ),
   };
+
   return (
     <div className="slide-container relative">
       <Slide {...properties}>
         {slideImages.map((slideImage, index) => (
-          <div key={index}>
+          <div key={index} className="relative">
             <div
               style={{ ...divStyle, backgroundImage: `url(${slideImage.url})` }}
+              className="bg-cover bg-center"
             ></div>
+           
           </div>
         ))}
       </Slide>

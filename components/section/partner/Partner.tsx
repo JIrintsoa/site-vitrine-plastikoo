@@ -31,7 +31,7 @@ const ListImage = [
 const Partner = ({}: Props) => {
   return (
     <div className=" mb-32">
-      <div className="bg-primary h-2 w-[10%] mb-20 mx-auto" />
+      <div className="bg-primary h-2 w-[10%] mx-auto" />
       <div className="bg-secondary w-full mb-20">
         <h1 className="ml-[15%] text-[40px] pt-11 text-white font-black">
           Nos contributions ODD
