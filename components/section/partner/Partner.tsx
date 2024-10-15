@@ -8,12 +8,15 @@ const ListImage = [
   {
     imgUrl: "/amazon.png",
   },
+
   {
-    imgUrl: "/ODC.png",
+    imgUrl: "/images/Nokia.png",
   },
+
   {
-    imgUrl: "/ey.png",
+    imgUrl: "/images/amazon.png",
   },
+
   {
     imgUrl: "/Nokia.png",
   },

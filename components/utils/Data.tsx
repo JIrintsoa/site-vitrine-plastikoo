@@ -1,6 +1,6 @@
 import { FaRecycle } from "react-icons/fa";
-import { GiWaterRecycling } from "react-icons/gi";
-import { TbTransformFilled } from "react-icons/tb";
+import { FaTrash } from "react-icons/fa"; // Ajout de FaTrash pour l'icône poubelle
+import { MdHouse } from "react-icons/md"; // Importation de l'icône pour la construction
 import { FaArrowRightLong } from "react-icons/fa6";
 import { ReactNode } from "react";
 import { FaPeopleRoof } from "react-icons/fa6";

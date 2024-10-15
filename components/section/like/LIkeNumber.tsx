@@ -25,8 +25,8 @@ const card: CardType[] = [
   },
   {
     number: 10,
-    suffix: "%",
-    description: "Pourcentage de déchets plastiques recyclables",
+    suffix: " %",
+    description: "Pourcentage de déchets plastiques recyclables.",
   },
   {
     number: 450,
@@ -36,15 +36,10 @@ const card: CardType[] = [
 ];
 
 const LIkeNumber = (props: Props) => {
-  const [inViewStates, setInViewStates] = useState<boolean[]>(
-    new Array(card.length).fill(false)
-  );
+  const [inViewStates, setInViewStates] = useState<boolean[]>(new Array(card.length).fill(false));
 
-  // Utiliser useCallback pour éviter que la fonction ne soit recréée à chaque rendu
   const handleInViewChange = useCallback((inView: boolean, index: number) => {
-    setInViewStates((prev) =>
-      prev.map((state, i) => (i === index ? inView : state))
-    );
+    setInViewStates((prev) => prev.map((state, i) => (i === index ? inView : state)));
   }, []);
 
   return (
@@ -87,11 +82,7 @@ type InViewMonitorProps = {
   children: React.ReactNode;
 };
 
-const InViewMonitor: React.FC<InViewMonitorProps> = ({
-  index,
-  onInViewChange,
-  children,
-}) => {
+const InViewMonitor: React.FC<InViewMonitorProps> = ({ index, onInViewChange, children }) => {
   const { ref, inView } = useInView({
     threshold: 0.5,
     triggerOnce: false,

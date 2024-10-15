@@ -17,15 +17,15 @@ const divStyle = {
 // Images du diaporama
 const slideImages = [
   {
-    url: "/slide3.png",
+    url: "/images/slide3.png",
     caption: "Slide 1",
   },
   {
-    url: "/slide1.png",
+    url: "/images/slide1.png",
     caption: "Slide 2",
   },
   {
-    url: "/slide2.png",
+    url: "/images/slide2.png",
     caption: "Slide 3",
   },
 ];

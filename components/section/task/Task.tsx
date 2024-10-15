@@ -78,20 +78,30 @@ const Step = ({
   imageSrc,
   imageAlt,
   description,
+  className,
 }: {
   imageSrc: string;
   imageAlt: string;
   description: string;
+  className?: string;
 }) => (
-  <div>
+  <div className={`flex flex-col items-center ${className}`}>
     <Reveal>
-      <Image src={imageSrc} width="150" height="150" alt={imageAlt} />
+      <Image
+        src={imageSrc}
+        width="150" // Réduire la taille de l'image (ajuste selon tes besoins)
+        height="100"
+        alt={imageAlt}
+        className="mb-2" // Optionnel : Ajoute une marge en bas de l'image
+      />
     </Reveal>
-    <p className="text-[20px] text-center text-black font-semibold">
+    <p className="text-[16px] text-center text-black font-semibold mt-1">
       {description}
     </p>
   </div>
 );
+
+
 
 const Arrow = () => (
   <Reveal>
