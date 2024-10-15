@@ -19,19 +19,17 @@ export interface ProcessItem {
 
 const ProcessCard = ({ item }: { item: ProcessItem }) => (
   // <Reveal>
-    <div
-      className={`${item.bgColor} lg:hover:z-50 hover:translate-y-3 text-white transition duration-300 rounded-2xl shadow-lg px-8 py-4 flex flex-col`}
-    >
-      <div className={`text-6xl text-start ${item.text_color} mb-4`}>
-        {item.icon}
-      </div>
-      <h2 className="lg:text-[30px] text-[20px] font-bold mb-2">
-        {item.titre}
-      </h2>
-      <p className="opacity-80 hidden lg:block space-x-5 line-clamp-6 mb-4 font-semibold text-[15px] text-start">
-        {item.description}
-      </p>
+  <div
+    className={`${item.bgColor} lg:hover:z-50 hover:translate-y-3 text-white transition duration-300 rounded-2xl shadow-lg px-8 py-4 flex flex-col`}
+  >
+    <div className={`text-6xl text-start ${item.text_color} mb-4`}>
+      {item.icon}
     </div>
+    <h2 className="lg:text-[30px] text-[20px] font-bold mb-2">{item.titre}</h2>
+    <p className="opacity-80 hidden lg:block space-x-5 line-clamp-6 mb-4 font-semibold text-[15px] text-start">
+      {item.description}
+    </p>
+  </div>
   // </Reveal>
 );
 
@@ -49,7 +47,7 @@ const Task = () => (
           </p>
         </Reveal>
         <button className="bg-secondary flex items-center py-2 justify-start text-white px-6 md:px-8 rounded-lg hover:scale-x-105 hover:scale-y-105 transition duration-300">
-          <div className="text-[12px] md:text-[14px]">
+          <div className="text-[15px] md:text-[14px]">
             Vidéo de présentation
           </div>
           <PiVideoFill className="text-white ml-2" />

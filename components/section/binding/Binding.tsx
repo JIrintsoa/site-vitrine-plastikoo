@@ -77,7 +77,7 @@ function Binding({}: Props) {
                       item.id === 1
                         ? "translate-x-0 translate-y-[-15px] sm:translate-x-[5px] sm:translate-y-[5px] md:translate-x-[-10px] lg:translate-x-[-15px] lg:translate-y-[-15px]  md:translate-y-[-15px]"
                         : item.id === 2
-                        ? "translate-x-0 sm:translate-y-[-5px] md:translate-y-[-10px] lg:translate-y-[-15px]"
+                        ? "translate-x-0 translate-y-[-15px] sm:translate-y-[-5px] md:translate-y-[-10px] lg:translate-y-[-15px]"
                         : item.id === 3
                         ? "translate-x-0 sm:translate-x-[10px] md:translate-x-[5px] lg:translate-x-[15px] lg:translate-y-[-15px]"
                         : item.id === 4
