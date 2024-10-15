@@ -9,11 +9,12 @@ const Contact = (props: Props) => {
       {/* Image Section */}
       <div className="relative w-full lg:w-1/2 h-[300px] lg:h-full">
         <Image
-          src="/images/slide1.png"
+          src="/slide1.png"
           alt="Contact image"
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{ objectFit: "cover" }}
         />
+
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-start justify-center text-white p-6 lg:p-14">
           <h1 className="text-2xl lg:text-4xl font-semibold mb-4">
             Ensemble, nous pourrons bâtir un avenir propre et durable.
