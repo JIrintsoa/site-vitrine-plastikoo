@@ -32,7 +32,7 @@ const Valeurs: React.FC<Props> = () => {
     <div className=" py-10 text-justify lg:text-center bg-white text-black">
       {/* Titre principal */}
       <Reveal>
-        <h2 className="text-4xl font-bold text-green-600 mb-8">Nos valeurs</h2>
+        <h2 className="text-4xl font-bold text-primary mb-8">Nos valeurs</h2>
       </Reveal>
 
       {/* Description */}
@@ -50,7 +50,7 @@ const Valeurs: React.FC<Props> = () => {
         {valeurs.map((valeur, index) => (
           <RevealLeft key={index}>
             <div className="flex flex-col w-9 items-center">
-              <div className="text-green-600 text-[45px] lg:text-[90px] mb-4">
+              <div className="text-primary text-[45px] lg:text-[90px] mb-4">
                 {valeur.icon}
               </div>
               <h3 className=" font-bold text-[15px] lg:text-[20px] text-dark">
