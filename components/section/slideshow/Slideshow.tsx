@@ -10,8 +10,8 @@ const divStyle = {
   justifyContent: "center",
   backgroundSize: "cover",
   backgroundPosition: "center",
-  height: "65vh", // Ajuste automatiquement à 65% de la hauteur de l'écran
-  width: "100%", // Pleine largeur de l'écran
+  height: "65vh",
+  width: "100%",
 };
 
 // Images du diaporama
@@ -53,7 +53,6 @@ const Slideshow = () => {
               style={{ ...divStyle, backgroundImage: `url(${slideImage.url})` }}
               className="bg-cover bg-center"
             ></div>
-           
           </div>
         ))}
       </Slide>

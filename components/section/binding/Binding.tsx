@@ -107,8 +107,8 @@ function Binding({}: Props) {
               <h2
                 className={`transition-all duration-300 ease-in-out ${
                   selectedId === item.id
-                    ? "text-4xl font-extrabold"
-                    : "text-5xl font-bold mb-2"
+                    ? "text-4xl lg:text-3xl  font-extrabold"
+                    : "text-5xl lg:text-4xl font-bold mb-2"
                 }`}
               >
                 {item.title}
@@ -116,7 +116,7 @@ function Binding({}: Props) {
               <p
                 className={`transition-all duration-300 ease-in-out ${
                   selectedId === item.id
-                    ? "text-xl font-extrabold justify-center mb-4"
+                    ? "text-xl lg:text-[15px] font-extrabold justify-center mb-4"
                     : " text-[15px] font-bold mb-2"
                 }`}
               >

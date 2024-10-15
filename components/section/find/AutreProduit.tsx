@@ -9,13 +9,13 @@ const SectionProduit: React.FC = () => {
       <Reveal>
         <div className="bg-white py-16">
           <div className="container mx-auto px-4 text-center">
-            <h2 className=" text-[30px] lg:text-4xl font-bold mb-4 text-red">
+            <h2 className=" text-[25px] lg:text-4xl font-bold mb-2 lg:mb-4 text-red">
               Découvrez nos Tiny constructions
             </h2>
-            <p className="text-3xl font-semibold mb-12 text-secondary">
+            <p className="text-[20px] lg:text-4xl font-semibold mb-5 lg:mb-12 text-secondary">
               Construit à partir de plastique recyclé
             </p>
-            <p className="text-[14px] mb-12 px-80 text-dark">
+            <p className="text-[14px] mb-12 lg:px-80 text-dark">
               Découvrez nos tiny constructions, une solution d'immobilier
               responsable qui allie innovation, durabilité et impact
               environnemental. Composées à 90% de matériaux recyclés, ces
@@ -54,7 +54,7 @@ const SectionProduit: React.FC = () => {
                   <h3 className="text-xl font-semibold mb-3">Tiny Classroom</h3>
                   <p className="text-gray-300 mb-4 text-[15px] line-clamp-3">
                     "Explorez des salles de classes conçues à partir de nos
-                    briques pour un environnement d’apprentissage propre et
+                    briques pour un environnement d'apprentissage propre et
                     inspirant."
                   </p>
                   <Link href="/products/TinyClassroom">
@@ -75,8 +75,8 @@ const SectionProduit: React.FC = () => {
                   <h3 className="text-xl font-semibold mb-3">Tiny Library</h3>
                   <p className="text-gray-300 mb-4 text-[15px] line-clamp-3">
                     "Créez un espace de lecture agréable et confortable avec nos
-                    briques, parfait pour stimuler l’esprit, éveiller la
-                    curiosité et encourager l’apprentissage."
+                    briques, parfait pour stimuler l'esprit, éveiller la
+                    curiosité et encourager l'apprentissage."
                   </p>
                   <Link href="/products/TinyLibrary">
                     <button className="bg-primary text-white py-2 px-6 rounded hover:bg-blue-600 transition duration-300">
@@ -99,7 +99,7 @@ const SectionProduit: React.FC = () => {
       </Reveal>
 
       <Reveal>
-        <div className="bg-white py-16">
+        <div className="bg-white lg:py-16">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-4xl font-bold mb-4 text-red-600">
               Découvrez nos produits

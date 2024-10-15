@@ -70,7 +70,7 @@ const Team = () => {
           </h1>
         </Reveal>
         {/* <Reveal> */}
-        <h1 className="text-white mb-6 text-[28px] px-7 sm:text-[16px] md:text-[18px] font-semibold sm:px-10 md:px-16 lg:px-24">
+        <h1 className="text-white mb-6 text-[16px] lg:text-[28px] px-4 sm:text-[16px] md:text-[18px] font-semibold sm:px-10 md:px-16 lg:px-24">
           Une planète où le plastique ne pollue plus, mais bâtit des
           possibilités infinies.
         </h1>
@@ -81,12 +81,14 @@ const Team = () => {
           Notre Équipe
         </h1>
       </Reveal>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-2 md:grid-cols-2 mb-9 lg:grid-cols-4 gap-8">
         {team.map((member, index) => (
-          <div key={index} className="flex flex-col items-center text-center">
+          <div
+            key={index}
+            className="flex flex-col mx-3 items-center text-center"
+          >
             <div
-              className={`w-[58%] h-[58%] overflow-hidden pb-8 flex items-center justify-center`}
+              className={`lg:w-[58%] lg:h-[58%] overflow-hidden pb-3 lg:pb-8 flex items-center justify-center`}
             >
               <Image
                 src={member.image}
@@ -96,8 +98,12 @@ const Team = () => {
                 className="w-full h-full"
               />
             </div>
-            <h2 className="mt-4 text-lg font-bold">{member.name}</h2>
-            <p className="text-gray-700">{member.role}</p>
+            <h2 className="mt-1 lg:mt-4 text-[16px] lg:text-lg font-bold">
+              {member.name}
+            </h2>
+            <p className="text-gray-700 text-[12px] lg:text-[20px]">
+              {member.role}
+            </p>
           </div>
         ))}
       </div>
