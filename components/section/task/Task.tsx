@@ -3,11 +3,13 @@ import React from "react";
 import { process } from "../../utils/Data";
 import Image from "next/image";
 import { Reveal } from "../../utils/Reveal";
+import { FaDownload } from "react-icons/fa";
 import { RevealRight } from "../../utils/RevealRight";
 import { RevealLeft } from "../../utils/RevealLeft";
 import { ReactNode } from "react";
 import { PiVideoFill } from "react-icons/pi";
 import { FaArrowRightLong } from "react-icons/fa6";
+import Link from "next/link";
 export interface ProcessItem {
   arrow: ReactNode;
   icon: ReactNode;
@@ -46,12 +48,22 @@ const Task = () => (
             matériaux de construction pour bâtir des infrastructures durables.
           </p>
         </Reveal>
-        <button className="bg-secondary flex items-center py-2 justify-start text-white px-6 md:px-8 rounded-lg hover:scale-x-105 hover:scale-y-105 transition duration-300">
-          <div className="text-[15px] md:text-[14px]">
-            Vidéo de présentation
-          </div>
-          <PiVideoFill className="text-white ml-2" />
-        </button>
+        <div className="block">
+          <button className="bg-secondary mb-2 flex items-center py-2 justify-start text-white px-6 md:px-8 rounded-lg hover:scale-x-105 hover:scale-y-105 transition duration-300">
+            <div className="text-[15px] md:text-[14px]">
+              Vidéo de présentation
+            </div>
+            <PiVideoFill className="text-white ml-2" />
+          </button>
+          <Link href="">
+            <button className="bg-orange flex items-center py-2 justify-start text-white px-6 md:px-8 rounded-lg hover:scale-x-105 hover:scale-y-105 transition duration-300">
+              <div className="text-[15px] md:text-[14px]">
+                Telecharger l'APK Plastikôo
+              </div>
+              <FaDownload className="text-white ml-2" />
+            </button>
+          </Link>
+        </div>
       </div>
       <Image
         src="/notre-solution.png"
