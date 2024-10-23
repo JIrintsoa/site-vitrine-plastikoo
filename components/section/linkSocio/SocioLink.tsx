@@ -12,7 +12,7 @@ const SocioLink = (props: Props) => {
       <div className="flex flex-col items-center space-y-3 bg-primary p-2 rounded-lg">
         <RevealLeft>
           <Link
-            href="https://www.facebook.com/search/top?q=plastik%C3%B4o%20madagascar"
+            href="https://www.facebook.com/profile.php?id=61563259853880&mibextid=LQQJ4d"
             target="_blank"
             rel="noopener noreferrer"
           >
